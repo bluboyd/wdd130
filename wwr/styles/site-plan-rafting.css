@@ -47,6 +47,11 @@ nav a{
     padding: 1rem;
     text-decoration: none;
 }
+
+nav a:link{
+    color:(--nav-link-color);
+}
+
 nav ahover{
     color: var(--nav-hover-link-color);
     background-color: (--nav-hover-background-color);

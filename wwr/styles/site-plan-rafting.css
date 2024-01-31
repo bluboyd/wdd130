@@ -2,8 +2,8 @@
 
 :root{
     --primary-color:  #958f6c;
-    --Secondary-color: #affc41;
-    --Accent1-color: #34e4ea;
+    --secondary-color: #affc41;
+    --accent1-color: #34e4ea;
     --accent2-color: #fefae0;
 
     --heading-font: 'Rock Salt';
@@ -22,13 +22,13 @@ body{
     padding: 20px;
 }
 h1,h2,h3,h4,h5,h6{
-    font-family:var(--heading-font);
-    color: var(--accent1-color);
+    font-family: var(--heading-font);
+    color: var(--primary-color);
 }
 
 header{
     padding:20px;
-    background-color: var(--primary-color)
+    background-color: var(--accent1-color)
 }
 p{
     padding: 25px;

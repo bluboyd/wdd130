@@ -12,17 +12,16 @@
     --nav-background-color: #affc41;
     --nav-link-color: #958f6c;
     --nav-hover-link-color: #34e4ea;
-    --nav-hover-background-color: #ffffff;
+    --nav-hover-background-color: black
 }
 
 body{
     font-family: var(--paragraph-font);
-    /*text-align: center;*/
-    /*margin: 0auto;*/
+
     max-width: 960px;
     padding: 20px;
 }
-h1, h2, h3, h4, h5, h6{
+h1,h2,h3,h4,h5,h6{
     font-family:var(--heading-font);
     color: var(--accent1-color);
 }
@@ -43,16 +42,15 @@ nav{
 nav a{
     display: block;
     color: var(--nav-link-color);
-    display: flex;
     padding: 1rem;
     text-decoration: none;
 }
 
-nav a:link{
+nav a:link,nav a:visited{
     color:(--nav-link-color);
 }
 
-nav ahover{
+nav a:hover{
     color: var(--nav-hover-link-color);
     background-color: (--nav-hover-background-color);
 }

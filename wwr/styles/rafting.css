@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rock+Salt&display=swap');
+
+:root {
+    --primary-color: orange;
+    --secondary-color: #34e4ea;
+    --accent1-color: #958f6c;
+    --accent2-color: #affc41;
+    
+    --heading-font: 'Rock Salt', sans-serif;
+    --paragraph-font: Roboto, sans-serif;
+
+    --nav-background-color: #fefae0;
+    --nav-link-color: #958f6c;
+    --nav-hover-link-color: #affc41;
+    --nav-hover-background-color: black;
+}
+header {
+    display: grid;
+    background-color: var(--secondary-color);
+    grid-template-columns: 25% 75%;
+    padding: 20px;
+    width: auto;
+    font-size: large;
+}
+
+header img {
+    width: 200px;
+    height: 150px;
+    padding: 1rem;
+    grid-column: 1/2;
+}
+
+body {
+    
+    max-width: 960px;
+    line-height: 1.5;
+    margin: auto;
+    padding: 20px;
+    font-family: Roboto;
+
+}
+
+nav {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-around;
+    align-items: center;
+    grid-column: 2/3;
+
+}
+    
+
+
+nav a {
+    font-family: var(--paragraph-font);
+    color: var(--primary-color);
+}
+
+nav a:hover {
+    color : var(--nav-hover-link-color);
+    background-color : var(--secondary-color);
+}
+
+figure img {
+    display: block;
+   width: 100%;
+   height: auto;
+   left: 0;
+   right: 0,
+
+}
+
+.hero {
+    position: relative;
+    margin-top: 20px;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+    left: 0;
+    right: 0,    
+}
+
+.hero h1 {
+    position: absolute;
+    color: #ccc ;
+    top: 5px;
+    left: 0px;
+    right: 0;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.5);
+ }
+
+.hero article {
+    position: absolute;
+    top: 40%;
+    left: 0%;
+    right: 0%;
+    background-color: var(--accent1-color);
+    width: 80%;
+    margin: 0 auto;
+    
+}
+
+.hero article img {
+    float: right;
+    width: 150px;
+}
+
+.hero p {
+    font-weight: bold;
+    font-size: medium;
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--heading-font);
+    color: var(--secondary-color);
+}
+nav{
+    background-color: var(--nav-background-color);
+    display: flex;
+    font-size: 1.2rem;
+}
+nav a{
+    display: block;
+    color: var(--nav-link-color);
+    padding: 1rem;
+    text-decoration: none;
+}
+
+nav a:link,nav a:visited{
+    color: var(--nav-link-color);
+}
+
+nav a:hover{
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: var(--paragraph-font);
+    margin-top: 1rem;
+    border-top: 2px solid #A54C40;
+    text-align: center;
+}
+
+.sociallinks {
+    display: flex;
+    justify-content: end;       
+}
+
+a:link {
+    text-decoration: none;
+}
+
+

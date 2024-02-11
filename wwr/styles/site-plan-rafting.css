@@ -15,12 +15,26 @@
     --nav-hover-background-color: black
 }
 
-body{
-    font-family: var(--paragraph-font);
-
-    max-width: 960px;
-    padding: 20px;
+header {
+    display: grid;
+    background-color: aquamarine;
+    position: relative;
 }
+
+header img {
+    width: 200px;
+    height: 150px;
+    padding: 1rem;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    grid-column: 2 / 6;
+    grid-row: 2/2;
+    text-align: center;
+}
+
 h1,h2,h3,h4,h5,h6{
     font-family: var(--heading-font);
     color: var(--primary-color);
@@ -60,3 +74,4 @@ footer{
     border-top: 1px solid #958f6c;
     text-align: center;
 }
+

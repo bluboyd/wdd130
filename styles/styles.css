@@ -1,16 +1,33 @@
+.grid{
+    display: grid;
+    align-items: center;
+}
+header, .grid, footer {
+    max-width: 840px;
+    margin:0 auto;
+}
+
+body{
+    font-size: 19px;
+    font-family:Roboto, Arial, sans-serif;
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body{
-    font-size: 19px;
-    font-family:Roboto, Arial, sans-serif;
+    display: block;
+    
 }
 
 nav {
     background-color: steelblue;
-    padding: 10px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
 }
 nav a {
     color: white;
@@ -21,9 +38,11 @@ h1 {
     color: steelblue;
     padding: .5rem
 }
-main {
-    max-width: 600px;
+main{
+    grid-column: 2;
+    margin: 1rem;
 }
+
 
 main img{
     width: 150px;
@@ -39,9 +58,10 @@ p {
     margin: 1rem;
 }
 aside {
-    width: 25em;
+    width: 20rem;
     text-align: center;
     position: relative;
+    grid-row: 1;
 }
 
 aside img {
@@ -54,6 +74,14 @@ aside h2{
     top: 70px;
     left: 190px
 }
+h2{
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
 
 footer {
     margin-top: 1em;
@@ -65,7 +93,7 @@ footer {
     margin: 1rem;
     border: 1px solid rgba(0, 0, 0, .1);
     padding: 1rem;
-    background-color: #eee;
+    background-color:  #eee;
     color: #000;
 
 }
